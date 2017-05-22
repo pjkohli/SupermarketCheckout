@@ -10,10 +10,10 @@ public class Product {
     String productName;
     float price;
     String promotionType;
-    float specialPrice;
-    Product freeProduct;
-    int quantitiesToBuy;
-    int quantitiesFree;
+    float specialPrice; //For products with Promotion Type 2
+    Product freeProduct; //For products with promotion Type 3
+    int quantitiesToBuy; //For products with promotion Type 3
+    int quantitiesFree; //For products with promotion Type 3
 
 
     public Product(int productId, String productName, float price, String promotionType) {
