@@ -21,7 +21,7 @@ public class Main {
 
         //Promotion Text - "Free Product" , Buy 5 get 2 500 ml free
         Product product3 = new Product(3,"Coca Cola 500ml",(float) 1.00,"Type5");
-        product3.setQuantitiesFree(2);
+        //product3.setQuantitiesFree(2);
         list.add(product3);
 
         //Promotion Text - "Buy 5 get 2 500 ml free"
@@ -70,7 +70,7 @@ public class Main {
             for (int j = 0; j < list.size(); j++) {
                 if (list.get(j).getProductId() == id[i]) {
                     price = list.get(j).getPrice();
-                    System.out.println("The original price of "+id[i]+" is: " + price);
+                    System.out.println("The original price of "+id[i]+"-" + list.get(j).getProductName() + " is: " + price);
                     if (list.get(j).getPromotionType() == "Type3") {
                         toBuy = list.get(j).getQuantitiesToBuy();
                         grandTotalPrice += price * quantity[i];
